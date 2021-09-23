@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+        /**
+         * Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um 
+automóvel que faz 12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto 
+(TEMPO) e a velocidade média (VELOCIDADE) durante a viagem. Desta forma, será possível obter a 
+distância percorrida com a fórmula DISTANCIA ← TEMPO * VELOCIDADE. Possuindo o valor da 
+distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula 
+LITROS_USADOS ← DISTANCIA / 12. Ao final, o programa deve apresentar os valores da velocidade 
+média (VELOCIDADE), tempo gasto na viagem (TEMPO), a distancia percorrida (DISTANCIA) e a 
+quantidade de litros (LITROS_USADOS) utilizada na viagem.
+        */
+
+        var tempo = prompt("Informe o tempo do trajeto (Horas): ")
+        var velocidade = prompt("Informe a velocidade que pretende percorrer no trajeto (Km/H): ");
+
+        var distancia = (~~tempo) * (~~velocidade);
+
+        var combustivel = (~~distancia) / 12;
+
+        alert("Quantidade de combustível necessário: " + (combustivel).toFixed(2) + "L"
+        + "\nVelocidade: " + velocidade + " Km/H" + "\nTempo: " + tempo + " H" + "\nDistancia: " + distancia + " Km");
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

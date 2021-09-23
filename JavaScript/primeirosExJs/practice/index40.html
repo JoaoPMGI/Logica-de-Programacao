@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         *  Elaborar um programa que efetue a leitura de três valores (A, B e C) e apresente como
+         *  resultado final à soma dos quadrados dos três valores lidos.
+        */
+
+        var a = parseInt(prompt("Informe um valor para A: "));
+        var b = parseInt(prompt("Informe um valor para B: "));
+        var c = parseInt(prompt("Informe um valor para C: "));
+
+        var total = (a ** 2) + (b ** 2) + (c ** 2);
+
+        alert("A soma dos quadrados dos valores informados = " + total);
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

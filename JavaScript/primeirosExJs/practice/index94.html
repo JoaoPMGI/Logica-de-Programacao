@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+
+        /*
+         *  Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de 
+            Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza 
+            pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo 
+            valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo 
+            é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc. 
+        */
+
+        var i = 0,
+            aux = 0,
+            soma = 0,
+            resultado = 1;
+
+        while( i < 15 ) {
+            aux = resultado;
+            resultado = soma;
+            soma = resultado + aux;
+
+            console.log(`${i + 1} -> ${soma}`);
+
+            i++;
+
+        }
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

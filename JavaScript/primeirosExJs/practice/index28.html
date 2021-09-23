@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        // CALCULA A ÁREA DE UM CIRCULO
+        
+        var raio = prompt("Informe o valor do raio do circulo (cm): ");
+        var area = (~~raio * ~~raio) * Math.PI;
+
+        alert("Valor da área do circulo: " + (area.toFixed(2)) + "cm²");
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

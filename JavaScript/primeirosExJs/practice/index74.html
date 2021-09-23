@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /*
+         *  Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para 
+            estar em condições, um dos seguintes requisitos deve ser satisfeito: 
+            - Ter no mínimo 65 anos de idade. 
+            - Ter trabalhado no mínimo 30 anos. 
+            - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos. 
+            Com base nas informações acima, faça um algoritmo que leia: o número do empregado (código), o ano 
+            de seu nascimento e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo 
+            de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+        */
+
+        var codigo = prompt("Informe o codigo: ");
+        var anoNasc = parseInt(prompt("Informe o ano de nascimento: "));
+        var anoEmpresa = parseInt(prompt("Informe o ano de ingresso na empresa: "));
+
+        var idade = 2021 - anoNasc;
+        
+        if ((idade >= 65) || ((2021 - anoEmpresa) > 30) || ((idade >= 60) && (2021 - anoEmpresa) >= 25)) {
+            alert(
+                "Idade: " + idade +
+                "\nAnos de trabalho na empresa: " + (2021 - anoEmpresa) + 
+                "\nRequerer aposentadoria"
+            );
+
+        } else {
+            alert(
+                "Idade: " + idade +
+                "\nAnos de trabalho na empresa: " + (2021 - anoEmpresa) + 
+                "\nNão requerer"
+            );
+
+        }
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

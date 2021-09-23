@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         * Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: 
+         * Volume Raio ** Altura 
+        */
+
+        var raio = prompt("Informe o raio da lata (cm): ");
+        var altura = prompt("Informe a altura da lata (cm): ");
+
+        var volume = ((Math.PI).toFixed(2)) * ((~~raio)**2) * (~~altura);
+
+        alert("Volume da lata: " + volume.toFixed(2) + "cm³");
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

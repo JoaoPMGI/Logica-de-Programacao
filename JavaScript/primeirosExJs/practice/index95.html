@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+
+        /*
+         *  Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 
+            10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O 
+            programa deve apresentar os valores das duas temperaturas. A fórmula de conversão 
+            é
+            5
+            +1609
+            =
+            C
+            F , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. 
+        */
+
+       var i = 10, f = 0, count = 1;
+
+       while( i <= 100 ) {
+           f = (9 * i + 160) / 5;
+           console.log(`${count}º => ${i}°C - ${f}°F`);
+
+           i += 10;
+
+       }
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

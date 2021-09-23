@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /*
+         * . Elaborar um programa que efetue a leitura do nome e do sexo de uma pessoa, apresentando com 
+saída uma das seguintes mensagens: "Ilmo Sr.", se o sexo informado como masculino, ou a 
+mensagem "Ilma Sra.", para o sexo informado como feminino. Apresente também junto da 
+mensagem de saudação o nome previamente informado. 
+        */
+
+       var nome = prompt("Informe o seu nome: ");
+       var sexo = prompt("Informe o seu sexo (M - MASCULINO, F - FEMININO): ");
+
+       if (sexo.toUpperCase() == "M") {
+           alert("Ilmo Sr. " + nome);
+
+       } else if (sexo.toUpperCase() == "F") {
+           alert("Ilma Sra. " + nome);
+
+       } else {
+           alert("Opção inválida !");
+           
+       }
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

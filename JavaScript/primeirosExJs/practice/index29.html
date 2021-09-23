@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        // INFORMA A MÉDIA DO ALUNO CONTABILIZANDO OS PESOS DE CADA NOTA
+
+        var nota1 = prompt("Informe a primeira nota: ");
+        var nota2 = prompt("Informe a segunda nota: ");
+        var nota3 = prompt("Informe a terceira nota: ");
+
+        var media = (((~~nota1 * 2) + (~~nota2 * 3) + (~~nota3 * 5)) / 10);
+
+        alert("Média do aluno: " + media);
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

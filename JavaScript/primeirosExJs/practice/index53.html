@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         *  Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e 
+escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior 
+ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.
+        */
+
+        var numeroConta = prompt("Informe o número da conta: ");
+        var saldo = parseInt(prompt("Informe o saldo: "));
+        var debito = parseInt(prompt("Informe a quantia debitada: "));
+        var credito =  parseInt(prompt("Informe a quantia creditada: "));
+
+        var resultado = saldo - debito + credito;
+
+        if(resultado < 0) {
+            alert("Número da conta: " + numeroConta + "\nSaldo: R$" + resultado.toFixed(2) + "\nStatus: NEGATIVO");
+
+        } else {
+            alert("Número da conta: " + numeroConta + "\nSaldo: R$" + resultado.toFixed(2) + "\nStatus: POSITIVO");
+
+        }
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

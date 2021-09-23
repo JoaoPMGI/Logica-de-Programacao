@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         *  Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela 
+poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu). 
+        */
+
+        var anoAtual = parseInt(prompt("Informe o ano atual: "));
+        var anoNasc = parseInt(prompt("Informe o ano de seu nascimento: "));
+
+        var resultado = anoAtual - anoNasc;
+
+        if (resultado >= 18) {
+            alert("Poderá votar esse ano !");
+
+        } else {
+            alert("Ainda não irá votar neste ano !");
+        
+        }
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

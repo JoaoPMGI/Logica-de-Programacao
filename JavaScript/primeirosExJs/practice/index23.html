@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /* CONVERTE A TEMPERATURA DE GRAUS °F PARA °C */
+
+        var tempF = prompt('Informe a temperatura (°F): ');
+
+        var tempC = ((~~tempF) - 32) / 1.8;
+        
+        alert('Temperatura: ' + tempC.toFixed(1) + '°C')
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

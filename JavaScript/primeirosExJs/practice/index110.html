@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+        
+        /*
+         *  Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo 
+            seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo 
+            usuário. 
+         */
+
+        var num = 0,
+            maior = 0,
+            menor = 0;
+
+        num = parseInt(prompt("Informe um número inteiro: "));
+        menor = num;
+
+        do {
+
+            if (num > maior) {
+                maior = num;
+
+            }
+
+            if (num < menor) {
+                menor = num;
+
+            }
+
+            num = parseInt(prompt("Informe um número inteiro: "));
+
+        } while (num >= 0);
+
+        console.log(`Maior - ${maior}\nMenor - ${menor}`);
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

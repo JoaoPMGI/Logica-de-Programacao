@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /*
+         *  Efetuar a leitura de quatro números inteiros e apresentar os números que são divisíveis por 2 e 3. 
+        */
+
+       var num1 = parseInt(prompt("Informe o 1º número: "));
+       var num2 = parseInt(prompt("Informe o 2º número: "));
+       var num3 = parseInt(prompt("Informe o 3º número: "));
+       var num4 = parseInt(prompt("Informe o 4º número: "));
+
+       var num1Cond, num2Cond, num3Cond, num4Cond;
+
+       if ((num1 % 2) == 0 && (num1 % 3) == 0) {
+           num1Cond = 'É DIVISÍVEL !';
+           
+       } else {
+           num1Cond = 'NÃO É DIVISÍVEL';
+       }
+
+       if ((num2 % 2) == 0 && (num2 % 3) == 0) {
+           num2Cond = 'É DIVISÍVEL !';
+           
+       } else {
+           num2Cond = 'NÃO É DIVISÍVEL';
+       }
+
+       if ((num3 % 2) == 0 && (num3 % 3) == 0) {
+           num3Cond = 'É DIVISÍVEL !';
+           
+       } else {
+           num3Cond = 'NÃO É DIVISÍVEL';
+       }
+
+       if ((num4 % 2) == 0 && (num4 % 3) == 0) {
+           num4Cond = 'É DIVISÍVEL !';
+           
+       } else {
+           num4Cond = 'NÃO É DIVISÍVEL';
+       }
+
+       alert(
+           "Números divisíveis por 2 e 3: " +
+           "\nNúmero = " + num1 + " -> " + num1Cond +
+           "\nNúmero = " + num2 + " -> " + num2Cond +
+           "\nNúmero = " + num3 + " -> " + num3Cond +
+           "\nNúmero = " + num4 + " -> " + num4Cond
+       );
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

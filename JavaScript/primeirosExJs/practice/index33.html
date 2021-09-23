@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         *  Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula 
+PRESTACAO ← VALOR + (VALOR * TAXA/100) * TEMPO).
+        */
+
+        var tempo = prompt("Informe o tempo de atraso: ");
+        var valor = prompt("Informe o valor: ");
+        var taxa = prompt("Informe o valor da taxa: ");
+
+
+        var total = (~~valor) + ((~~valor) * ((~~taxa) / 100)) * (~~tempo);
+        alert("Valor total a ser pago: R$" + total.toFixed(2));
+    
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

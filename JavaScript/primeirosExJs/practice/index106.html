@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+
+        /*
+         * Elaborar um programa que efetue a leitura de 15 valores numéricos inteiros e no final apresente o 
+total do somatório da fatorial de cada valor lido. 
+         */
+
+         var i = 1, aux = 0, soma = 0, fatorial = 1, num = 0;
+
+         do{
+
+            num = parseInt(prompt(`Informe o ${i}º número: `));
+
+            fatorial = 1;
+            aux = num;
+
+            while( aux >= 1 ) {
+                fatorial = fatorial * aux;
+                aux--;
+
+            }
+        
+            soma = soma + fatorial;
+
+            i++;
+
+         } while( i <= 15 );
+
+         console.log(soma);
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

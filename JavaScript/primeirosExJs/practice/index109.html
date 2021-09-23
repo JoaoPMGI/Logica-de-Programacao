@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+        /*
+         * Elaborar um programa que possibilite calcular a área total de uma residência (sala, cozinha, 
+            banheiro, quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do 
+            nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área 
+            do cômodo lido e também uma mensagem solicitando do usuário a confirmação de continuar 
+            calculando novos cômodos. Caso o usuário responda “NAO”, o programa deve apresentar o valor 
+            total acumulado da área residencial. 
+         */
+
+        var total = 0,
+            largura = 0,
+            comprimento = 0,
+            area = 0,
+            nome = "",
+            confirm = "S";
+
+        do {
+
+            nome = prompt("Informe o nome do cômodo: ");
+            largura = parseFloat(prompt("Informe a largura: "));
+            comprimento = parseFloat(prompt("Informe o comprimento: "));
+
+            area = largura * comprimento;
+            total = total + area;
+
+            console.log(`Cômodo => ${nome}\nÁrea => ${area.toFixed(2)}m²\n`);
+
+            confirm = prompt("Deseja informar mais algum cômodo ?(S/N)").toUpperCase();
+
+        } while (confirm == "S");
+
+        console.log(`\nÁrea total => ${total.toFixed(2)}m²`);
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         * Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a 
+            apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para 
+            cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de 
+            votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e 
+            votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos 
+            válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de 
+            eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de 
+            eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de 
+            eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de 
+            eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último 
+            o percentual correspondente de votos em branco em relação à quantidade de eleitores.
+        */
+
+        var votosValidosCandidatoA = parseInt(prompt("Informe a quantidade de votos válidos para o candidato A: "));
+        var votosValidosCandidatoB = parseInt(prompt("Informe a quantidade de votos válidos para o candidato B: "));
+        var votosValidosCandidatoC = parseInt(prompt("Informe a quantidade de votos válidos para o candidato C: "));
+
+        var votosNulos = parseInt(prompt("Informe a quantidade de votos nulos: "));
+        var votosBranco = parseInt(prompt("Informe a quantidade de votos em branco: "));
+
+        var totalVotosValidos = votosValidosCandidatoA + votosValidosCandidatoB + votosValidosCandidatoC;
+        
+        var eleitores = votosValidosCandidatoA + votosValidosCandidatoB + votosValidosCandidatoC + 
+        votosNulos + votosBranco;
+
+        alert(
+            "Total de eleitores: " + eleitores +
+            "\nTotal de votos válidos: " + ((totalVotosValidos / eleitores) * 100) + "%" +
+            "\nVotos candidato A: " + ((votosValidosCandidatoA / eleitores) * 100) + "%" +
+            "\nVotos candidato B: " + ((votosValidosCandidatoB / eleitores) * 100) + "%" +
+            "\nVotos candidato C: " + ((votosValidosCandidatoC / eleitores) * 100) + "%" +
+            "\nVotos nulos: " + ((votosNulos / eleitores) * 100) + "%" +
+            "\nVotos em branco: " + ((votosBranco / eleitores) * 100) + "%"
+        );
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

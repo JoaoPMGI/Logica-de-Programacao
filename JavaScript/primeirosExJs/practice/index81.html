@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+        
+        /*
+         *  Efetuar a leitura de três valores (variáveis A, B e C) e apresentá-los dispostos em ordem crescente. 
+         */
+
+        var num1 = parseFloat(prompt("Digite o 1º valor: "));
+        var num2 = parseFloat(prompt("Digite o 2º valor: "));
+        var num3 = parseFloat(prompt("Digite o 3º valor: "));
+
+        if (num1 < num2 && num1 < num3) {
+            if (num2 < num3) {
+                alert("Ordem: " + num1 + ", " + num2 + ", " + num3);
+
+            } else {
+                alert("Ordem: " + num1 + ", " + num3 + ", " + num2);
+
+            }
+        }
+
+        if (num2 < num1 && num2 < num3) {
+            if (num1 < num3) {
+                alert("Ordem: " + num2 + ", " + num1 + ", " + num3);
+
+            } else {
+                alert("Ordem: " + num2 + ", " + num3 + ", " + num1);
+
+            }
+        }
+
+        if (num3 < num1 && num3 < num2) {
+            if (num1 < num2) {
+                alert("Ordem: " + num3 + ", " + num1 + ", " + num2);
+
+            } else {
+                alert("Ordem: " + num3 + ", " + num2 + ", " + num1);
+
+            }
+        }
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

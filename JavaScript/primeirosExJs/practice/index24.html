@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+        
+        /* Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, 
+mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele 
+efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas 
+vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do 
+vendedor. */
+
+        var vendasCarro = prompt("Informe a quantidade de carros vendidos: ")
+        var valorCarro = prompt("Informe o ganho por carro: ")
+        var vendasTotal = prompt("Informe o total de vendas: ")
+        var salario = prompt("Informe o sálario fixo: ")
+
+        var salarioTotal = ((~~salario) + (~~valorCarro * ~~vendasCarro) + (~~vendasTotal * .05));
+
+        alert("Sálario final: R$" + salarioTotal.toFixed(2))
+        /*
+        
+        */
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

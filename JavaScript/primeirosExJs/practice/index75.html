@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /*
+         *  Seja o seguinte algoritmo: 
+            inicio 
+            ler a, b, c 
+            se (a < b+c) e (b <a+c) e (c <a+b) então 
+            se (a=b) e (b=c) então 
+            mens  'Triângulo Equilátero' 
+            senão 
+            se (a=b) ou (b=c) ou (a=c) então 
+            mens  'Triângulo Isósceles' 
+            senão 
+            mens  'Triângulo Escaleno' 
+            fim_se 
+            fim_se 
+            senão 
+            mens  'Não e possível formar um triângulo' 
+            fim_se 
+            escrever mens 
+            fim 
+            Faça um teste de mesa e complete o quadro a seguir para os seguintes valores das variáveis:
+        */
+
+        var a = parseFloat(prompt("Informe o valor do lado a: "));
+        var b = parseFloat(prompt("Informe o valor do lado b: "));
+        var c = parseFloat(prompt("Informe o valor do lado c: "));
+
+        if ((a + b) > c && (a + c) > b && (b + c) > a) {
+            if (a == b && b == c) {
+                alert("Triângulo Equilátero");
+
+            } else if (a == b || b == c || a == c) {
+                alert("Triângulo Isósceles"); // 
+
+            } else {
+                alert("Triângulo Escaleno");
+
+            }
+
+        } else {
+            alert("Não e possível formar um triângulo");
+
+        }
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

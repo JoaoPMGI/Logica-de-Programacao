@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         *  Elaborar um programa que efetue a apresentação do valor da conversão em dólar de um valor lido em 
+real. O programa deve solicitar o valor da cotação do dólar e também a quantidade de reais disponível 
+com o usuário, para que seja apresentado o valor em moeda americana.
+
+        */
+
+        var cotacaoDolar = parseFloat(prompt("Informe a cotação do dolar(US$): "));
+        var reais = parseFloat(prompt("Informe a quantia em reais(R$) para converter em dólares(US$): "));
+
+        var dolares = cotacaoDolar / reais;
+
+        alert("Quantia em dólares: U$" + dolares.toFixed(2));
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

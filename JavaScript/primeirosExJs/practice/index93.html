@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+
+        /*
+         *  Elaborar um programa que apresente como resultado o valor de uma potência de uma base 
+qualquer elevada a um expoente qualquer, ou seja, de BE
+, em que B é o valor da base e E o valor 
+do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do 
+portuguol (^). 
+        */
+
+        var b = parseInt(prompt("Informe B: "));
+        var e = parseInt(prompt("Informe E: "));
+
+        var i = 0, aux = b;
+
+        while (i <= e) {
+            b = (i == 0) ? 1 : b * aux;
+            i++;
+
+        }
+
+        console.log(`Resultado = ${b}`);
+        
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

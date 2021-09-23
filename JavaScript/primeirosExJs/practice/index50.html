@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         * A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais 
+de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. 
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva 
+o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas 
+(considere que o mês possua 4 semanas exatas). 
+        */
+
+        var horasTrab = parseInt(prompt("Informe a quantidade de horas trabalhadas no mês: "));
+        var pagHora = parseFloat(prompt("Informe o valor recebido por hora (R$): "));
+
+        var salarioTotal;
+
+        if (horasTrab <= 160) {
+            salarioTotal = horasTrab * pagHora;
+
+        } else {
+            salarioTotal = ((horasTrab - 160) * (pagHora + (pagHora * .5))) + (pagHora + 160);
+        
+        }
+
+        alert("O total a ser recebido é: R$" + salarioTotal.toFixed(2));
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

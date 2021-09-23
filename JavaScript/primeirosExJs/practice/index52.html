@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         * Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que 
+ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que 
+ultrapassar este valor, calcular e escrever o seu salário total. 
+        */
+
+        var salario = parseFloat(prompt("Digite o salario: "));
+        var vendas = parseFloat(prompt("Digite o valor das vendas: "));
+
+        var salarioFinal;
+
+        if (vendas > 1500) {
+            salarioFinal = salario + ((vendas - 1500) * 0.05) + (1500 * 0.03); //8
+        
+        } else {
+            salarioFinal = salario + (vendas * 0.03)
+        }
+
+        alert("Salario final: R$" + salarioFinal.toFixed(2));
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

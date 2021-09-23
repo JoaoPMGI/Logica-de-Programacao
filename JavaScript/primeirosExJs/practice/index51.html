@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <script defer>
+
+        /**
+         * INFORMA O PESO IDEAL DE HOMENS E MULHERES
+        */
+
+        var sexo = prompt("Informe o sexo (H ou M): ");
+        var altura = parseFloat(prompt("Informe a sua altura: "));
+        var pesoIdeal;
+
+        if (sexo.toLocaleUpperCase == 'H' || sexo.toLocaleLowerCase == 'h') {
+            pesoIdeal = (72.7 * altura) - 58;
+        
+        } else {
+            pesoIdeal = (62.1 * altura) - 44.7;
+
+        }
+
+        alert("O peso ideal seria de: " + pesoIdeal.toFixed(2) + "kg");
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>

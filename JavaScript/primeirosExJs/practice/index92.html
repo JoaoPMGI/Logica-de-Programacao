@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Operação Finalizada.</h1>
+
+    <h2>Check the console ! (Press ´F12´)</h2>
+
+    <script defer>
+
+        /*
+         *  Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser 
+considerado que qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. Observe que 
+neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^). 
+        */
+
+        var i = 0, resultado = 0;
+
+        while (i <= 15) {
+            resultado = (i == 0) ? 1 : resultado * 3;
+
+            console.log(`Resultado de 3 ^ ${i} = ${resultado}`);
+            i++;
+
+        }
+
+    </script>
+
+    <button onclick="document.location.reload(true);">Reset</button>
+
+</body>
+
+</html>
