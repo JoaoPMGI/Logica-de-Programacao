@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="João Pedro Mendes Gomes">
+    <meta name="description" content="Exercícios de Lógica de Programação em Js">
+    <meta name="keywords" content="Exercícios, Lógica, Js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>Soma</h1>
+
+    <label for="num1">Digite um valor:</label>
+    <input type="text" name="num1" id="num1">
+
+    <label for="num2">Digite um valor:</label>
+    <input type="text" name="num2" id="num2">
+
+    <br>
+    <button onclick="Somar()">Somar</button>
+    <br>
+
+    <p class="resultado"></p>
+
+    <script>
+
+        function Somar() {
+            var num1 = document.querySelector("#num1").value;
+            var num2 = document.querySelector("#num2").value;
+
+            var resultado = parseInt(num1) + parseInt(num2);
+            document.querySelector(".resultado").innerHTML = resultado;
+            document.query
+        }
+
+    </script>
+
+</body>
+
+</html>

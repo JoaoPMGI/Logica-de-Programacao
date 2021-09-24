@@ -13,27 +13,24 @@
 
 <body>
 
-    <h1>Operação Finalizada.</h1>
+    <h1>Operação</h1>
 
-    <h2>Check the console ! (Press ´F12´)</h2>
+    <form action="">
 
-    <script defer>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Enviar">
 
-        /*
-         *  Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100). 
-         */
+    </form>
 
-         var total = 0;
+    <script>
+        
+        var input = document.querySelector("#name");
 
-         for(let i = 1; i <= 100; i++) {
-            total = total + i;
-            console.log(`${i} - ${total}`);
+        var texto = input.value;
 
-         };
+        console.log(texto);
 
     </script>
-
-    <button onclick="document.location.reload(true);">Reset</button>
 
 </body>
 
