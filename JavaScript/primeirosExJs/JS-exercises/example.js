@@ -1,5 +1,3 @@
-console.log("Variaveis\n");
-
 let x = 16 + " Volvo"; /* concatena 16 com Volvo*/
 console.log(x);
 
@@ -48,10 +46,8 @@ const x = {
 
 */
 
-console.log("\n\nFunctions\n");
 /* JS Functions */
 
-/* Chamando a função e executando retornando valor na var x */
 function soma(n1, n2) {
     return n1 + n2;
 }
@@ -59,10 +55,9 @@ function soma(n1, n2) {
 x = soma(2, 3);
 console.log(x);
 
-/* Chamando a função e executando sem retornar valor */
+/* Chamando a função */
 function somar() {
     console.log(1 + 2);
 }
 
 somar();
-

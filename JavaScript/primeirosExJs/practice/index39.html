@@ -25,7 +25,7 @@ com o usuário, para que seja apresentado o valor em moeda americana.
         var cotacaoDolar = parseFloat(prompt("Informe a cotação do dolar(US$): "));
         var reais = parseFloat(prompt("Informe a quantia em reais(R$) para converter em dólares(US$): "));
 
-        var dolares = cotacaoDolar / reais;
+        var dolares = reais / cotacaoDolar;
 
         alert("Quantia em dólares: U$" + dolares.toFixed(2));
 
